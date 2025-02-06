@@ -1,0 +1,28 @@
+{
+  "name": "soulsync Music Player",
+  "short_name": "soulsync",
+  "description": "A sleek and modern web-based music player.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#202020",
+  "theme_color": "#F6F4E6",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/assets/image/logo/logo_192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/image/logo/logo_512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "scope": "/",
+  "serviceworker": {
+    "src": "",
+    "scope": "",
+    "update_via_cache": "none"
+  }
+}
