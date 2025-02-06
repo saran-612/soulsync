@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Soulsync
+        </title>
+        <meta name="description" content="This is a Music player webapp, named soulsync which is created for a college lab project.">
+        <meta name="keywords" content="Music player, web app, html, css, js">
+        <meta name="robots" content="index, follow">
+        <link rel="manifest" href="json/manifest.json">
+        <link rel="icon" type="image/png" href="assets/image/logo/logo.png">
+        <link rel="stylesheet" href="css/index.css">
+        <script src="js/block.js"></script>
+    </head>
+    <body>
+        <div class="top_bar">
+            <div class="menu_bar">
+                <div class="logo">
+                    <img src="assets/image/logo/logo.png" alt="logo">
+                </div>
+                <div class="home">
+                    <button
+                    class="text-light-blue-light hover:text-black dark:text-gray-400 border-2 inline-flex items-center mr-4 last-of-type:mr-0 p-2.5 border-transparent bg-light-secondary shadow-button-flat-nopressed hover:border-2 hover:shadow-button-flat-pressed focus:opacity-100 focus:outline-none active:border-2 active:shadow-button-flat-pressed font-medium rounded-full text-sm text-center dark:bg-button-curved-default-dark dark:shadow-button-curved-default-dark dark:hover:bg-button-curved-pressed-dark dark:hover:shadow-button-curved-pressed-dark dark:active:bg-button-curved-pressed-dark dark:active:shadow-button-curved-pressed-dark dark:focus:bg-button-curved-pressed-dark dark:focus:shadow-button-curved-pressed-dark dark:border-0"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-5 h-5"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+                <div class="">
+    
+                </div>
+                <div class="search_bar">
+                        <form class="form">
+                            <button>
+                                <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="search">
+                                    <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9" stroke="currentColor" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </button>
+                            <input id="search" class="input" placeholder="Search..." required="" type="text">
+                            <button class="reset" type="reset">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                                </svg>
+                            </button>
+                        </form>
+                </div>
+                
+                <div class="menu_icon">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="music_frame">
+            <div class="row1">
+                <div class="item1">
+                    <a href="" onclick="playSong('0')">
+                        <div class="pht_section">
+                            <img src="assets/image/music profile/Samajavaragamana.png" alt="pht" class="pht">
+                        </div>
+                    </a>
+                    <div class="para">
+                        Samajavaragamana
+                    </div>
+                </div>
+                <div class="item2">
+                    <a href=""onclick="playSong('1')">
+                        <div class="pht_section">
+                            <img src="assets/image/music profile/Vazhlithunaiye.png" alt="pht" class="pht">
+                        </div>
+                    </a>
+                    <div class="para">
+                        Vazhithunaiye
+                    </div>
+                </div>
+                <div class="item3">
+                    <a href="" onclick="playSong('2')">
+                        <div class="pht_section">
+                            <img src="assets/image/music profile/Pathikichu.png" alt="pht" class="pht">
+                        </div>
+                    </a>
+                    <div class="para">
+                        Pathikichu
+                    </div>
+                </div>
+                <div class="item4">
+                    <a href="" onclick="playSong('3')">
+                        <div class="pht_section">
+                            <img src="assets/image/music profile/Oru Manam.png" alt="pht" class="pht">
+                        </div>
+                    </a>
+                    <div class="para">
+                        Oru Manam
+                    </div>
+                </div>
+                <div class="item5">
+                    <a href="" onclick="playSong('4')">
+                        <div class="pht_section">
+                            <img src="assets/image/music profile/Venmathiye.png" alt="pht" class="pht">
+                        </div>
+                    </a>
+                    <div class="para">
+                        Venmathiye
+                    </div>
+                </div>
+            </div>
+            <div class="row2">
+                <div class="item1">
+                    <a href="" onclick="playSong('5')"target="_self">
+                        <div class="pht_section">
+                            <img src="assets/image/music profile/Aga Naga.png" alt="pht" class="pht">
+                        </div>
+                    </a>
+                    <div class="para">
+                        Aga Naga
+                    </div>
+                </div>
+                <div class="item2">
+                    <a href="" onclick="playSong('6')">
+                        <div class="pht_section">
+                            <img src="assets/image/music profile/Amizhdhe Nee.png" alt="pht" class="pht">
+                        </div>
+                    </a>
+                    <div class="para">
+                        Amizhdhe Nee
+                    </div>
+                </div>
+                <div class="item3">
+                    <a href="" onclick="playSong('7')">
+                        <div class="pht_section">
+                            <img src="assets/image/music profile/K For Kabaradakkam.png" alt="pht" class="pht">
+                        </div>
+                    </a>
+                    <div class="para">
+                        K For Kabaradakkam
+                    </div>
+                </div>
+                <div class="item4">
+                    <a href="" onclick="playSong('8')"target="_self">
+                        <div class="pht_section">
+                            <img src="assets/image/music profile/Ennadi Maayavi Nee.png" alt="pht" class="pht">
+                        </div>
+                    </a>
+                    <div class="para">
+                        Ennadi Maayavi Nee
+                    </div>
+                </div>
+                <div class="item5">
+                    <a href="" onclick="playSong('9')" target="_self">
+                        <div class="pht_section">
+                            <img src="assets/image/music profile/Kadhaippoma.png" alt="pht" class="pht">
+                        </div>
+                    </a>
+                    <div class="para">
+                        Kadhaippoma
+                    </div>
+                </div>
+            </div>
+            <div class="row3">
+                <div class="item1">
+                    <a href="" onclick="playSong('10')" target="_self">
+                        <div class="pht_section">
+                            <img src="assets/image/music profile/Kurunchiragu.png" alt="pht" class="pht">
+                        </div>
+                    </a>
+                    <div class="para">
+                        Kurunchiragu
+                    </div>
+                </div>
+                <div class="item2">
+                    <a href="" onclick="playSong('11')" target="_self">
+                        <div class="pht_section">
+                            <img src="assets/image/music profile/Erimalayin Magale.png" alt="pht" class="pht">
+                        </div>
+                    </a>
+                    <div class="para">
+                        Erimalayin Magale
+                    </div>
+                </div>
+                <div class="item3">
+                    <a href="" onclick="playSong('12')" target="_self">
+                        <div class="pht_section">
+                            <img src="assets/image/music profile/Mudhal Nee Mudivum Nee.png" alt="pht" class="pht">
+                        </div>
+                    </a>
+                    <div class="para">
+                        Mudhal Nee Mudivum Nee
+                    </div>
+                </div>
+                <div class="item4">
+                    <a href="" onclick="playSong('13')" target="_self">
+                        <div class="pht_section">
+                            <img src="assets/image/music profile/Vaane Vaane.png" alt="pht" class="pht">
+                        </div>
+                    </a>
+                    <div class="para">
+                        Vaane Vaane
+                    </div>
+                </div>
+                <div class="item5">
+                    <a href="" onclick="playSong('14')" target="_self">
+                        <div class="pht_section">
+                            <img src="assets/image/music profile/Kanave Kanave.png" alt="pht" class="pht">
+                        </div>
+                    </a>
+                    <div class="para">
+                        Kanave Kanave
+                    </div>
+                </div>
+            </div>
+            <div class="row4">
+                <div class="item1">
+                    <a href="" onclick="playSong('15')" target="_self">
+                        <div class="pht_section">
+                            <img src="assets/image/music profile/Yean Ennai Pirindhaai.png" alt="pht" class="pht">
+                        </div>
+                    </a>
+                    <div class="para">
+                        Yaen Ennai Pirindhaai
+                    </div>
+                </div>
+                <div class="item2">
+                    <a href=""onclick="playSong('16')" target="_self">
+                        <div class="pht_section">
+                            <img src="assets/image/music profile/Inkem Inkem Inkem.png" alt="pht" class="pht">
+                        </div>
+                    </a>
+                    <div class="para">
+                        Inkem Inkem Inkem
+                    </div>
+                </div>
+                <div class="item3">
+                    <a href="" onclick="playSong('17')" target="_self">
+                        <div class="pht_section">
+                            <img src="assets/image/music profile/Badass.png" alt="pht" class="pht">
+                        </div>
+                    </a>
+                    <div class="para">
+                        Badass
+                    </div>
+                </div>
+                <div class="item4">
+                    <a href="" onclick="playSong('18')" target="_self">
+                        <div class="pht_section">
+                            <img src="assets/image/music profile/Aval.png" alt="pht" class="pht">
+                        </div>
+                    </a>
+                    <div class="para">
+                        Aval
+                    </div>
+                </div>
+                <div class="item5">
+                    <a href="" onclick="playSong('19')" target="_self">
+                        <div class="pht_section">
+                            <img src="assets/image/music profile/Dheema.png" alt="pht" class="pht">
+                        </div>
+                    </a>
+                    <div class="para">
+                        Dheema
+                    </div>
+                </div>
+            </div>
+            <div class="row5">
+                <div class="item1">
+                    <a href="" onclick="playSong('20')" target="_self">
+                        <div class="pht_section">
+                            <img src="assets/image/music profile/Chikitu Vibe.png" alt="pht" class="pht">
+                        </div>
+                    </a>
+                    <div class="para">
+                        Chikitu Vibe
+                    </div>
+                </div>
+                <div class="item2">
+                    <a href="" onclick="playSong('21')" target="_self">
+                        <div class="pht_section">
+                            <img src="assets/image/music profile/Darshana.png" alt="pht" class="pht">
+                        </div>
+                    </a>
+                    <div class="para">
+                        Darshana
+                    </div>
+                </div>
+                <div class="item3">
+                    <a href="" onclick="playSong('22')" target="_self">
+                        <div class="pht_section">
+                            <img src="assets/image/music profile/Kadhal Aasai.png" alt="pht" class="pht">
+                        </div>
+                    </a>
+                    <div class="para">
+                        Kadhal Aasai
+                    </div>
+                </div>
+                <div class="item4">
+                    <a href="" onclick="playSong('23')" target="_self">
+                        <div class="pht_section">
+                            <img src="assets/image/music profile/Sawadeeka.png" alt="pht" class="pht">
+                        </div>
+                    </a>
+                    <div class="para">
+                        Sawadeeka
+                    </div>
+                </div>
+                <div class="item5">
+                    <a href="" onclick="playSong('24')" target="_self">
+                        <div class="pht_section">
+                            <img src="assets/image/music profile/Nenjin Ezhuth.png" alt="pht" class="pht">
+                        </div>
+                    </a>
+                    <div class="para">
+                        Nenjin Ezhuth
+                    </div>
+                </div>
+            </div>
+            <div class="row6">
+                <div class="item1">
+                    <a href="" onclick="playSong('25')" target="_self">
+                        <div class="pht_section">
+                            <img src="assets/image/music profile/Kadhale Kadhale.png" alt="pht" class="pht">
+                        </div>
+                    </a>
+                    <div class="para">
+                        Kadhale Kadhale
+                    </div>
+                </div>
+                <div class="item2">
+                    <a href="" onclick="playSong('26')" target="_self">
+                        <div class="pht_section">
+                            <img src="assets/image/music profile/Kanave Unai.png" alt="pht" class="pht">
+                        </div>
+                    </a>
+                    <div class="para">
+                        Kanave Unai
+                    </div>
+                </div>
+                <div class="item3">
+                    <a href="" onclick="playSong('27')" target="_self">
+                        <div class="pht_section">
+                            <img src="assets/image/music profile/Nee Kavithaigala.png" alt="pht" class="pht">
+                        </div>
+                    </a>
+                    <div class="para">
+                        Nee Kavithaigala
+                    </div>
+                </div>
+                <div class="item4">
+                    <a href="" onclick="playSong('28')" target="_self">
+                        <div class="pht_section">
+                            <img src="assets/image/music profile/Manasilaayo.png" alt="pht" class="pht">
+                        </div>
+                    </a>
+                    <div class="para">
+                        Manasilaayo
+                    </div>
+                </div>
+                <div class="item5">
+                    <a href="" onclick="playSong('29')" target="_self">
+                        <div class="pht_section">
+                            <img src="" alt="pht" class="pht">
+                        </div>
+                    </a>
+                    <div class="para">
+                        discription
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="player_bar" >
+            <audio id="audio">
+                Your browser does not support the audio element.
+            </audio>
+            <button id="pre" onclick="pre()">
+                <div class="pre">
+                    <img src="assets/image/icon/pre.svg" alt="pre">
+                </div>
+            </button>
+            <button class="playpause"id="playpause" onclick="play_pause()">
+                <svg style="display: block;"viewBox="0 0 384 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="play"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path></svg>
+                <svg style="display: none;" viewBox="0 0 320 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="pause"><path d="M48 64C21.5 64 0 85.5 0 112V400c0 26.5 21.5 48 48 48H80c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H48zm192 0c-26.5 0-48 21.5-48 48V400c0 26.5 21.5 48 48 48h32c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H240z"></path></svg>
+            </button>
+            <button id="next" onclick="nxtsng()">
+                <div class="next">
+                    <img src="assets/image/icon/next.svg" alt="pre">
+                </div>
+            </button>
+            <div class="cover_img">
+                <img src="" alt="pht" id="cover_img">
+            </div>
+            <div class="cover_txt" id="cover_txt"></div>
+            <a onclick="toggleMute()" class="mute">
+                    <img src="assets/image/icon/unmute.png" alt="mute_pht" id="mute_pht" class="mute_pht">
+            </a>
+            
+        </div>
+        <script src="js/player.js"></script>
+    </body>
+</html>
